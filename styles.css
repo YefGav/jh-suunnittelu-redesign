@@ -53,10 +53,12 @@ nav a:hover {
 
 /* Hero section */
 /* Hero section with overlay and larger height */
+/* Update hero background to use the new abstract energy illustration */
+/* Updated hero background: point to the new hero image in the root directory */
 .hero {
     background-image:
         linear-gradient(rgba(10, 35, 66, 0.6), rgba(10, 35, 66, 0.6)),
-        url('hero.png');
+        url('hero_new.png');
     background-size: cover;
     background-position: center;
     color: #ffffff;
