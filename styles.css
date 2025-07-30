@@ -7,10 +7,15 @@ body {
     background-color: #ffffff;
 }
 
+/* Header and navigation */
 header {
-    background-color: #0a3d62;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #ffffff;
+    color: #0A2342;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -33,25 +38,35 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: #0A2342;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 14px;
+    padding: 6px 4px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #00A859;
+    border-bottom: 2px solid #00A859;
 }
 
 /* Hero section */
+/* Hero section with overlay and larger height */
 .hero {
-    background-image: url('hero.png');
+    background-image:
+        linear-gradient(rgba(10, 35, 66, 0.6), rgba(10, 35, 66, 0.6)),
+        url('hero.png');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
-    padding: 140px 20px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .hero h1 {
@@ -66,25 +81,46 @@ nav a:hover {
     margin: 0 auto 30px;
 }
 
+/* Button style */
 .btn {
-    background-color: #61a5c2;
-    color: #fff;
-    padding: 12px 30px;
+    background-color: #00A859;
+    color: #ffffff;
+    padding: 14px 36px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #4e8fa4;
+    background-color: #00894d;
+}
+
+/* Secondary button for outlines */
+.btn-secondary {
+    background-color: transparent;
+    color: #00A859;
+    padding: 14px 36px;
+    border: 2px solid #00A859;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 15px;
+}
+
+.btn-secondary:hover {
+    background-color: #00A859;
+    color: #ffffff;
 }
 
 /* Section headings */
 section h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #0a3d62;
+    color: #0A2342;
     font-size: 2rem;
 }
 
@@ -107,7 +143,7 @@ section h2 {
 
 .card h3 {
     margin-top: 0;
-    color: #0a3d62;
+    color: #0A2342;
 }
 
 .card ul {
@@ -130,7 +166,7 @@ section h2 {
 .contact-card {
     flex: 1 1 250px;
     max-width: 280px;
-    background-color: #f5f9fc;
+    background-color: #f5f8fa;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -198,7 +234,7 @@ footer {
 }
 
 footer a {
-    color: #61a5c2;
+    color: #00A859;
     text-decoration: none;
 }
 
