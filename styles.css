@@ -46,7 +46,7 @@ nav a:hover {
 
 /* Hero section */
 .hero {
-    background-image: url('assets/hero.png');
+    background-image: url('hero.png');
     background-size: cover;
     background-position: center;
     color: #fff;
